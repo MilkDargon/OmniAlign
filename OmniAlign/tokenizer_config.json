@@ -1,0 +1,423 @@
+{
+  "added_tokens_decoder": {
+    "0": {
+      "content": "<s>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "1": {
+      "content": "<pad>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "2": {
+      "content": "</s>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "3": {
+      "content": "<unk>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250001": {
+      "content": "<mask>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250002": {
+      "content": "<ʘ‿ʘ>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250003": {
+      "content": "<╯°□°）╯︵ ┻━┻>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250004": {
+      "content": "<◕_◕>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250005": {
+      "content": "<ಠ_ಠ>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250006": {
+      "content": "<(｀^´)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250007": {
+      "content": "<¯\\_(ツ)_/¯>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250008": {
+      "content": "<(✧ω✧)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250009": {
+      "content": "<(◍•ᴗ•◍)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250010": {
+      "content": "<(≧▽≦)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250011": {
+      "content": "<(๑•̀ㅂ•́)و✧>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250012": {
+      "content": "<(｡◕‿◕｡)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250013": {
+      "content": "<(•̀ᴗ•́)و>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250014": {
+      "content": "<(>_<)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250015": {
+      "content": "<(｡•́︿•̀｡)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250016": {
+      "content": "<(≧∇≦)ﾉ>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250017": {
+      "content": "<(๑˃̵ᴗ˂̵)و>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250018": {
+      "content": "<(≧∇≦)ﾉ♪>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250019": {
+      "content": "<(｡･ω･｡)ﾉ♬>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250020": {
+      "content": "<(•̀⌄•́)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250021": {
+      "content": "<(｡•́︿•̀｡)ﾉ>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250022": {
+      "content": "<(｡･ω･｡)ﾉ♡>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250023": {
+      "content": "<(๑•́ ₃ •̀๑)>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250024": {
+      "content": "<(≧∇≦)ﾉ☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250025": {
+      "content": "<(｡･ω･｡)ﾉ☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250026": {
+      "content": "<(｡•́︿•̀｡)ﾉ☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250027": {
+      "content": "<(｡•́︿•̀｡)ﾉ♪>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250028": {
+      "content": "<(｡•́︿•̀｡)ﾉ♡>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250029": {
+      "content": "<(｡•́︿•̀｡)ﾉ☆♪>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250030": {
+      "content": "<(｡•́︿•̀｡)ﾉ♡♪>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250031": {
+      "content": "<(｡•́︿•̀｡)ﾉ☆♡>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250032": {
+      "content": "<(｡•́︿•̀｡)ﾉ☆♡♪>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250033": {
+      "content": "<(｡•́︿•̀｡)ﾉ♪♡>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250034": {
+      "content": "<(｡•́︿•̀｡)ﾉ♪☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250035": {
+      "content": "<(｡•́︿•̀｡)ﾉ♪☆♡>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250036": {
+      "content": "<(｡•́︿•̀｡)ﾉ♪♡☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250037": {
+      "content": "<(｡•́︿•̀｡)ﾉ♡☆♪>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250038": {
+      "content": "<(｡•́︿•̀｡)ﾉ♡♪☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250039": {
+      "content": "<(｡•́︿•̀｡)ﾉ☆♪♡>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250040": {
+      "content": "<(｡•́︿•̀｡)ﾉ♪♡☆111>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250041": {
+      "content": "<(11｡•́︿•̀｡)ﾉ♪♡☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250042": {
+      "content": "<12(｡•́︿•̀｡)ﾉ♪♡☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250043": {
+      "content": "<123(｡•́︿•̀｡)ﾉ♪♡☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250044": {
+      "content": "<(｡•́︿23•̀｡)ﾉ♪♡☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250045": {
+      "content": "<(1321｡•́︿•̀｡)ﾉ♪♡☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250046": {
+      "content": "<(123335｡•́︿•̀｡)ﾉ♪♡☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "250047": {
+      "content": "<123(123335｡•́︿•̀｡)ﾉ♪♡☆>",
+      "lstrip": true,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    }
+  },
+  "bos_token": "<s>",
+  "clean_up_tokenization_spaces": true,
+  "cls_token": "<s>",
+  "eos_token": "</s>",
+  "extra_special_tokens": {},
+  "mask_token": "<mask>",
+  "model_max_length": 8192,
+  "pad_token": "<pad>",
+  "sep_token": "</s>",
+  "tokenizer_class": "XLMRobertaTokenizerFast",
+  "unk_token": "<unk>"
+}

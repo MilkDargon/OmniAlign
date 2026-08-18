@@ -1,0 +1,13 @@
+# OmniAlign inference-only dependencies (Python 3.10+)
+# Training dependencies (datasets, boto3, xformers, ...) are NOT required for the example.
+faiss-cpu==1.11.0
+jieba==0.42.1
+nltk==3.9.2
+numba==0.61.2
+numpy==1.26.4
+safetensors==0.7.0
+sentence_splitter==1.4
+sentence_transformers==5.0.0
+torch==2.7.1
+tqdm==4.67.1
+transformers==4.56.1

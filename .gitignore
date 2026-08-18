@@ -1,0 +1,14 @@
+# Large OmniAlign weights / tokenizer (keep a config-only shell in git)
+OmniAlign/*.safetensors
+OmniAlign/*.bin
+OmniAlign/*.pt
+OmniAlign/*.ckpt
+OmniAlign/*.onnx
+OmniAlign/tokenizer.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
