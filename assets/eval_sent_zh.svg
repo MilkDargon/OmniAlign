@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="773" height="277" viewBox="0 0 773 277">
+<rect x="0.5" y="0.5" width="772" height="276" fill="#ffffff" stroke="#d0d7de"/>
+<rect x="0.5" y="0.5" width="772" height="38" fill="#f6f8fa"/>
+<text x="12" y="24.0" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1f2328">算法</text>
+<text x="213.0" y="24.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1f2328">en-zh</text>
+<text x="299.0" y="24.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1f2328">en-es</text>
+<text x="385.0" y="24.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1f2328">en-it</text>
+<text x="471.0" y="24.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1f2328">en-de</text>
+<text x="557.0" y="24.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1f2328">en-fr</text>
+<text x="643.0" y="24.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1f2328">en-ru</text>
+<text x="729.0" y="24.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1f2328">de-fr</text>
+<line x1="0.5" y1="38" x2="772.5" y2="38" stroke="#d0d7de"/>
+<text x="12" y="60.0" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">Gale–Church</text>
+<text x="213.0" y="60.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.682</text>
+<text x="299.0" y="60.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.900</text>
+<text x="385.0" y="60.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.977</text>
+<text x="471.0" y="60.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.897</text>
+<text x="557.0" y="60.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.838</text>
+<text x="643.0" y="60.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.911</text>
+<text x="729.0" y="60.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.680</text>
+<rect x="0.5" y="72" width="772" height="34" fill="#f6f8fa"/>
+<line x1="0.5" y1="72" x2="772.5" y2="72" stroke="#d0d7de"/>
+<text x="12" y="94.0" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">BleuAlign</text>
+<text x="213.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.782</text>
+<text x="299.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.819</text>
+<text x="385.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.901</text>
+<text x="471.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.806</text>
+<text x="557.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.757</text>
+<text x="643.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.791</text>
+<text x="729.0" y="94.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.770</text>
+<line x1="0.5" y1="106" x2="772.5" y2="106" stroke="#d0d7de"/>
+<text x="12" y="128.0" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">VecAlign</text>
+<text x="213.0" y="128.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.957</text>
+<text x="299.0" y="128.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.892</text>
+<text x="385.0" y="128.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.956</text>
+<text x="471.0" y="128.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.869</text>
+<text x="557.0" y="128.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.880</text>
+<text x="643.0" y="128.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.921</text>
+<text x="729.0" y="128.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.902</text>
+<rect x="0.5" y="140" width="772" height="34" fill="#f6f8fa"/>
+<line x1="0.5" y1="140" x2="772.5" y2="140" stroke="#d0d7de"/>
+<text x="12" y="162.0" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">BertAlign</text>
+<text x="213.0" y="162.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#0969da" text-decoration="underline">0.969</text>
+<line x1="195.0" y1="165.0" x2="231.0" y2="165.0" stroke="#0969da" stroke-width="1"/>
+<text x="299.0" y="162.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#0969da" text-decoration="underline">0.897</text>
+<line x1="281.0" y1="165.0" x2="317.0" y2="165.0" stroke="#0969da" stroke-width="1"/>
+<text x="385.0" y="162.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#d1242f">0.984</text>
+<text x="471.0" y="162.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#0969da" text-decoration="underline">0.900</text>
+<line x1="453.0" y1="165.0" x2="489.0" y2="165.0" stroke="#0969da" stroke-width="1"/>
+<text x="557.0" y="162.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#0969da" text-decoration="underline">0.909</text>
+<line x1="539.0" y1="165.0" x2="575.0" y2="165.0" stroke="#0969da" stroke-width="1"/>
+<text x="643.0" y="162.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#d1242f">0.938</text>
+<text x="729.0" y="162.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#d1242f">0.939</text>
+<line x1="0.5" y1="174" x2="772.5" y2="174" stroke="#d0d7de"/>
+<text x="12" y="196.0" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">SentAlign</text>
+<text x="213.0" y="196.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.968</text>
+<text x="299.0" y="196.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.872</text>
+<text x="385.0" y="196.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.978</text>
+<text x="471.0" y="196.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.892</text>
+<text x="557.0" y="196.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.903</text>
+<text x="643.0" y="196.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.920</text>
+<text x="729.0" y="196.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#0969da" text-decoration="underline">0.932</text>
+<line x1="711.0" y1="199.0" x2="747.0" y2="199.0" stroke="#0969da" stroke-width="1"/>
+<rect x="0.5" y="208" width="772" height="34" fill="#f6f8fa"/>
+<line x1="0.5" y1="208" x2="772.5" y2="208" stroke="#d0d7de"/>
+<text x="12" y="230.0" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">CrocoAlign</text>
+<text x="213.0" y="230.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.660</text>
+<text x="299.0" y="230.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.696</text>
+<text x="385.0" y="230.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.864</text>
+<text x="471.0" y="230.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.804</text>
+<text x="557.0" y="230.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.788</text>
+<text x="643.0" y="230.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.783</text>
+<text x="729.0" y="230.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.714</text>
+<line x1="0.5" y1="242" x2="772.5" y2="242" stroke="#d0d7de"/>
+<text x="12" y="264.0" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#1f2328">OmniAlign（本工作）</text>
+<text x="213.0" y="264.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#d1242f">0.970</text>
+<text x="299.0" y="264.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#d1242f">0.906</text>
+<text x="385.0" y="264.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#0969da" text-decoration="underline">0.978</text>
+<line x1="367.0" y1="267.0" x2="403.0" y2="267.0" stroke="#0969da" stroke-width="1"/>
+<text x="471.0" y="264.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#d1242f">0.913</text>
+<text x="557.0" y="264.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#d1242f">0.912</text>
+<text x="643.0" y="264.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#0969da" text-decoration="underline">0.935</text>
+<line x1="625.0" y1="267.0" x2="661.0" y2="267.0" stroke="#0969da" stroke-width="1"/>
+<text x="729.0" y="264.0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Noto Sans SC', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#1f2328">0.922</text>
+<line x1="170" y1="0.5" x2="170" y2="276.5" stroke="#d0d7de"/>
+<line x1="256" y1="0.5" x2="256" y2="276.5" stroke="#d0d7de"/>
+<line x1="342" y1="0.5" x2="342" y2="276.5" stroke="#d0d7de"/>
+<line x1="428" y1="0.5" x2="428" y2="276.5" stroke="#d0d7de"/>
+<line x1="514" y1="0.5" x2="514" y2="276.5" stroke="#d0d7de"/>
+<line x1="600" y1="0.5" x2="600" y2="276.5" stroke="#d0d7de"/>
+<line x1="686" y1="0.5" x2="686" y2="276.5" stroke="#d0d7de"/>
+</svg>
