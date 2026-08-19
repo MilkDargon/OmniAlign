@@ -19,6 +19,10 @@
 
 This model is the final checkpoint produced by the four-stage distillation pipeline, built on top of [`Alibaba-NLP/gte-multilingual-mlm-base`](https://huggingface.co/Alibaba-NLP/gte-multilingual-mlm-base).
 
+> **This GitHub repository hosts inference code only.**  
+> Model weights live on Hugging Face: [`WPS-Qingqiu/OmniAlign`](https://huggingface.co/WPS-Qingqiu/OmniAlign).  
+> Download them into the local `OmniAlign/` directory before running the examples.
+
 ---
 
 ## Model Details
@@ -37,24 +41,24 @@ This model is the final checkpoint produced by the four-stage distillation pipel
 
 ## Installation
 
+Clone this repo, download the weights from Hugging Face into `OmniAlign/`, then install inference dependencies. Python 3.12 is recommended.
+
 ```bash
-# Python 3.12 recommended
+git clone https://github.com/MilkDargon/OmniAlign.git
+cd OmniAlign
+hf download WPS-Qingqiu/OmniAlign --local-dir OmniAlign
 pip install -r example/requirements.txt
 ```
 
 The example needs only inference dependencies (`torch`, `transformers`, `sentence_transformers`, `jieba`, `nltk`, `sentence_splitter`, `numpy`, `numba`, `faiss-cpu`).
 
+If the `hf` command is missing, run `pip install -U huggingface_hub` first.
+
 ---
 
 ## Quick Start
 
-Run the end-to-end example from the model repo root:
-
-```bash
-bash example/example.sh
-```
-
-Or run each task directly:
+From the cloned GitHub repo, set `--model_path` to the downloaded weights directory:
 
 ### Word Alignment
 
@@ -64,7 +68,7 @@ python example/example.py \
   --tgt "He broke promise" \
   --src_lang zh --tgt_lang en \
   --task word_align \
-  --model_path .
+  --model_path OmniAlign
 ```
 
 Output:
@@ -85,7 +89,7 @@ python example/example.py \
   --tgt "大语言模型（LLMs）是过去十年人工智能领域最具变革性的突破之一。这些模型基于涵盖书籍、网站与学术论文在内的万亿字节级文本数据进行训练，擅长捕捉复杂的语言模式、语境细微差异乃至逻辑推理能力。" \
   --src_lang en --tgt_lang zh \
   --task sent_align \
-  --model_path .
+  --model_path OmniAlign
 ```
 
 Output:
@@ -100,52 +104,115 @@ See [`example/README.md`](example/README.md) for the full list of arguments.
 
 ---
 
-## Loading with the HuggingFace `transformers` library
-
-The model uses remote code (`trust_remote_code=True`). You can load it directly from the Hub:
-
-```python
-from transformers import AutoModel, AutoTokenizer
-
-tokenizer = AutoTokenizer.from_pretrained("WPS-Qingqiu/OmniAlign", trust_remote_code=True)
-model = AutoModel.from_pretrained("WPS-Qingqiu/OmniAlign", trust_remote_code=True)
-```
-
-> Replace `WPS-Qingqiu/OmniAlign` with the actual model repository id once published.
-
----
-
 ## Evaluation
 
 ### Word Alignment (AER, lower is better)
 
-AER (Alignment Error Rate) on standard word alignment test sets. For each language pair, the best result is **bolded** and the second-best is underlined.
+AER (Alignment Error Rate) on standard word alignment test sets. For each language pair, the best result is <span style="color:#d1242f"><strong>red and bold</strong></span>, and the second-best is <span style="color:#0969da"><u>blue and underlined</u></span>.
 
-| Methods | zh-en | de-en | fr-en | ro-en | ja-en | es-en | pt-en | ru-en | it-en |
-|---|---|---|---|---|---|---|---|---|---|
-| FastAlign | 38.1 | 27.0 | 10.5 | 27.0 | 51.1 | - | - | - | - |
-| GIZA++ | 35.1 | 20.6 | 5.9 | 26.4 | 48.0 | - | - | - | - |
-| SimAlign | 21.6 | 16.6 | 7.5 | 22.3 | 46.6 | 14.2 | 14.1 | 15.4 | 17.7 |
-| AwesomeAlign | 13.3 | 13.3 | 3.8 | 18.7 | 37.4 | 12.0 | 12.7 | 13.5 | 15.7 |
-| AccAlign | 11.5 | 12.1 | 2.8 | 16.9 | 36.8 | 11.1 | 12.1 | 12.5 | 14.3 |
-| WSPAlign (Bilingual) | 13.1 | 11.1 | 2.8 | 10.1 | 19.3 | - | - | - | - |
-| WSPAlign (Multilingual) | 22.3 | 20.0 | 12.8 | 26.4 | 45.8 | 13.4 | 12.3 | 13.1 | 17.1 |
-| BinaryAlign (Bilingual) | **4.8** | **7.8** | **1.9** | **7.4** | **14.3** | - | - | - | - |
-| **OmniAlign (ours)** | 8.5 | 11.0 | 2.7 | 16.7 | 29.6 | **10.7** | **11.9** | **12.1** | **14.1** |
+<table>
+  <thead>
+    <tr>
+      <th>Methods</th>
+      <th>zh-en</th>
+      <th>de-en</th>
+      <th>fr-en</th>
+      <th>ro-en</th>
+      <th>ja-en</th>
+      <th>es-en</th>
+      <th>pt-en</th>
+      <th>ru-en</th>
+      <th>it-en</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FastAlign</td>
+      <td>38.1</td><td>27.0</td><td>10.5</td><td>27.0</td><td>51.1</td><td>-</td><td>-</td><td>-</td><td>-</td>
+    </tr>
+    <tr>
+      <td>GIZA++</td>
+      <td>35.1</td><td>20.6</td><td>5.9</td><td>26.4</td><td>48.0</td><td>-</td><td>-</td><td>-</td><td>-</td>
+    </tr>
+    <tr>
+      <td>SimAlign</td>
+      <td>21.6</td><td>16.6</td><td>7.5</td><td>22.3</td><td>46.6</td><td>14.2</td><td>14.1</td><td>15.4</td><td>17.7</td>
+    </tr>
+    <tr>
+      <td>AwesomeAlign</td>
+      <td>13.3</td><td>13.3</td><td>3.8</td><td>18.7</td><td>37.4</td><td>12.0</td><td>12.7</td><td><span style="color:#0969da"><u>13.5</u></span></td><td>15.7</td>
+    </tr>
+    <tr>
+      <td>AccAlign</td>
+      <td>11.5</td><td>12.1</td><td>2.8</td><td>16.9</td><td>36.8</td><td><span style="color:#0969da"><u>11.1</u></span></td><td><span style="color:#0969da"><u>12.1</u></span></td><td>12.5</td><td><span style="color:#0969da"><u>14.3</u></span></td>
+    </tr>
+    <tr>
+      <td>WSPAlign (Bilingual)</td>
+      <td>13.1</td><td>11.1</td><td>2.8</td><td><span style="color:#0969da"><u>10.1</u></span></td><td><span style="color:#0969da"><u>19.3</u></span></td><td>-</td><td>-</td><td>-</td><td>-</td>
+    </tr>
+    <tr>
+      <td>WSPAlign (Multilingual)</td>
+      <td>22.3</td><td>20.0</td><td>12.8</td><td>26.4</td><td>45.8</td><td>13.4</td><td>12.3</td><td>13.1</td><td>17.1</td>
+    </tr>
+    <tr>
+      <td>BinaryAlign (Bilingual)</td>
+      <td><span style="color:#d1242f"><strong>4.8</strong></span></td><td><span style="color:#d1242f"><strong>7.8</strong></span></td><td><span style="color:#d1242f"><strong>1.9</strong></span></td><td><span style="color:#d1242f"><strong>7.4</strong></span></td><td><span style="color:#d1242f"><strong>14.3</strong></span></td><td>-</td><td>-</td><td>-</td><td>-</td>
+    </tr>
+    <tr>
+      <td><strong>OmniAlign (ours)</strong></td>
+      <td><span style="color:#0969da"><u>8.5</u></span></td><td><span style="color:#0969da"><u>11.0</u></span></td><td><span style="color:#0969da"><u>2.7</u></span></td><td>16.7</td><td>29.6</td><td><span style="color:#d1242f"><strong>10.7</strong></span></td><td><span style="color:#d1242f"><strong>11.9</strong></span></td><td><span style="color:#d1242f"><strong>12.1</strong></span></td><td><span style="color:#d1242f"><strong>14.1</strong></span></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Sentence Alignment (F1, higher is better)
 
-F1 scores on standard sentence alignment test sets. For each language pair, the best result is **bolded** and the second-best is underlined.
+F1 scores on standard sentence alignment test sets. For each language pair, the best result is <span style="color:#d1242f"><strong>red and bold</strong></span>, and the second-best is <span style="color:#0969da"><u>blue and underlined</u></span>.
 
-| Algorithm | en-zh | en-es | en-it | en-de | en-fr | en-ru | de-fr |
-|---|---|---|---|---|---|---|---|
-| Gale–Church | 0.682 | 0.900 | 0.977 | 0.897 | 0.838 | 0.911 | 0.680 |
-| BleuAlign | 0.782 | 0.819 | 0.901 | 0.806 | 0.757 | 0.791 | 0.770 |
-| VecAlign | 0.957 | 0.892 | 0.956 | 0.869 | 0.880 | 0.921 | 0.902 |
-| BertAlign | 0.969 | 0.897 | **0.984** | 0.900 | 0.909 | **0.938** | **0.939** |
-| SentAlign | 0.968 | 0.872 | 0.978 | 0.892 | 0.903 | 0.920 | 0.932 |
-| CrocoAlign | 0.660 | 0.696 | 0.864 | 0.804 | 0.788 | 0.783 | 0.714 |
-| **OmniAlign (ours)** | **0.970** | **0.906** | 0.978 | **0.913** | **0.912** | 0.935 | 0.922 |
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm</th>
+      <th>en-zh</th>
+      <th>en-es</th>
+      <th>en-it</th>
+      <th>en-de</th>
+      <th>en-fr</th>
+      <th>en-ru</th>
+      <th>de-fr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gale–Church</td>
+      <td>0.682</td><td>0.900</td><td>0.977</td><td>0.897</td><td>0.838</td><td>0.911</td><td>0.680</td>
+    </tr>
+    <tr>
+      <td>BleuAlign</td>
+      <td>0.782</td><td>0.819</td><td>0.901</td><td>0.806</td><td>0.757</td><td>0.791</td><td>0.770</td>
+    </tr>
+    <tr>
+      <td>VecAlign</td>
+      <td>0.957</td><td>0.892</td><td>0.956</td><td>0.869</td><td>0.880</td><td>0.921</td><td>0.902</td>
+    </tr>
+    <tr>
+      <td>BertAlign</td>
+      <td><span style="color:#0969da"><u>0.969</u></span></td><td><span style="color:#0969da"><u>0.897</u></span></td><td><span style="color:#d1242f"><strong>0.984</strong></span></td><td><span style="color:#0969da"><u>0.900</u></span></td><td><span style="color:#0969da"><u>0.909</u></span></td><td><span style="color:#d1242f"><strong>0.938</strong></span></td><td><span style="color:#d1242f"><strong>0.939</strong></span></td>
+    </tr>
+    <tr>
+      <td>SentAlign</td>
+      <td>0.968</td><td>0.872</td><td>0.978</td><td>0.892</td><td>0.903</td><td>0.920</td><td><span style="color:#0969da"><u>0.932</u></span></td>
+    </tr>
+    <tr>
+      <td>CrocoAlign</td>
+      <td>0.660</td><td>0.696</td><td>0.864</td><td>0.804</td><td>0.788</td><td>0.783</td><td>0.714</td>
+    </tr>
+    <tr>
+      <td><strong>OmniAlign (ours)</strong></td>
+      <td><span style="color:#d1242f"><strong>0.970</strong></span></td><td><span style="color:#d1242f"><strong>0.906</strong></span></td><td><span style="color:#0969da"><u>0.978</u></span></td><td><span style="color:#d1242f"><strong>0.913</strong></span></td><td><span style="color:#d1242f"><strong>0.912</strong></span></td><td><span style="color:#0969da"><u>0.935</u></span></td><td>0.922</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 

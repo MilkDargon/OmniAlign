@@ -1,10 +1,6 @@
-# Large OmniAlign weights / tokenizer (keep a config-only shell in git)
-OmniAlign/*.safetensors
-OmniAlign/*.bin
-OmniAlign/*.pt
-OmniAlign/*.ckpt
-OmniAlign/*.onnx
-OmniAlign/tokenizer.json
+# OmniAlign on GitHub is an empty directory only (weights live on Hugging Face)
+OmniAlign/*
+!OmniAlign/.gitkeep
 
 # Python
 __pycache__/
