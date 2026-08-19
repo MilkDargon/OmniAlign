@@ -1,10 +1,10 @@
 <p align="center">
-  <a href="README.md">English</a>&nbsp;｜&nbsp;中文
+  <a href="https://huggingface.co/WPS-Qingqiu/OmniAlign">English</a>&nbsp;｜&nbsp;中文
 </p>
 
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX">📄 Paper (arXiv)</a>&nbsp;|&nbsp;
-  <a href="https://huggingface.co/WPS-Qingqiu/OmniAlign"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="18" height="18" style="vertical-align: text-bottom;"> Hugging Face</a>
+  <a href="https://github.com/MilkDargon/OmniAlign">💻 GitHub</a>
 </p>
 
 # OmniAlign
@@ -18,6 +18,10 @@
 - **四阶段训练**：通过四个训练阶段逐步增强词嵌入与句嵌入。
 
 本模型是四阶段蒸馏流程产出的最终 checkpoint，基于 [`Alibaba-NLP/gte-multilingual-mlm-base`](https://huggingface.co/Alibaba-NLP/gte-multilingual-mlm-base) 构建。
+
+> **本仓库只存放模型权重与配置。**  
+> 推理代码、对齐脚本与可运行示例在 GitHub 仓库：[**MilkDargon/OmniAlign**](https://github.com/MilkDargon/OmniAlign)。  
+> 在这里加载权重只能得到编码器；词对齐 / 句对齐流程实现在 GitHub 的 `example/` 中。
 
 ---
 
@@ -36,24 +40,24 @@
 
 ## 安装
 
+请先克隆 **GitHub** 仓库（代码），再安装推理依赖。推荐 Python 3.12。
+
 ```bash
-# 推荐 Python 3.12
+git clone https://github.com/MilkDargon/OmniAlign.git
+cd OmniAlign
+hf download WPS-Qingqiu/OmniAlign --local-dir OmniAlign
 pip install -r example/requirements.txt
 ```
 
 example 仅需推理依赖（`torch`、`transformers`、`sentence_transformers`、`jieba`、`nltk`、`sentence_splitter`、`numpy`、`numba`、`faiss-cpu`）。
 
+权重会从本 Hub 仓库下载到本地的 `OmniAlign/` 目录。若没有 `hf` 命令，先执行 `pip install -U huggingface_hub`。
+
 ---
 
 ## 快速开始
 
-在模型仓库根目录运行端到端示例：
-
-```bash
-bash example/example.sh
-```
-
-或分别运行每个任务：
+在克隆下来的 GitHub 仓库中运行，并将 `--model_path` 指向刚下载的权重目录：
 
 ### 词对齐
 
@@ -63,7 +67,7 @@ python example/example.py \
   --tgt "He broke promise" \
   --src_lang zh --tgt_lang en \
   --task word_align \
-  --model_path .
+  --model_path OmniAlign
 ```
 
 输出：
@@ -84,7 +88,7 @@ python example/example.py \
   --tgt "大语言模型（LLMs）是过去十年人工智能领域最具变革性的突破之一。这些模型基于涵盖书籍、网站与学术论文在内的万亿字节级文本数据进行训练，擅长捕捉复杂的语言模式、语境细微差异乃至逻辑推理能力。" \
   --src_lang en --tgt_lang zh \
   --task sent_align \
-  --model_path .
+  --model_path OmniAlign
 ```
 
 输出：
@@ -95,22 +99,7 @@ Large language models (LLMs) represent one of the most transformative breakthrou
 Trained on terabytes of text data spanning books, websites, and academic papers, these models excel at capturing complex linguistic patterns, contextual nuances, and even logical reasoning.  <==>  这些模型基于涵盖书籍、网站与学术论文在内的万亿字节级文本数据进行训练，擅长捕捉复杂的语言模式、语境细微差异乃至逻辑推理能力。
 ```
 
-完整参数列表见 [`example/README_zh.md`](example/README_zh.md)。
-
----
-
-## 通过 HuggingFace `transformers` 加载
-
-本模型使用远程代码（需 `trust_remote_code=True`），可直接从 Hub 加载：
-
-```python
-from transformers import AutoModel, AutoTokenizer
-
-tokenizer = AutoTokenizer.from_pretrained("WPS-Qingqiu/OmniAlign", trust_remote_code=True)
-model = AutoModel.from_pretrained("WPS-Qingqiu/OmniAlign", trust_remote_code=True)
-```
-
-> 发布后请将 `WPS-Qingqiu/OmniAlign` 替换为实际的模型仓库 id。
+完整参数列表见 GitHub 仓库中的 [`example/README_zh.md`](https://github.com/MilkDargon/OmniAlign/blob/main/example/README_zh.md)。
 
 ---
 
@@ -118,7 +107,9 @@ model = AutoModel.from_pretrained("WPS-Qingqiu/OmniAlign", trust_remote_code=Tru
 
 ### 词对齐（AER，越低越好）
 
-在标准词对齐测试集上的 AER（对齐错误率）。每个语言对中，<span style="color:red">最优结果红色加粗</span>，<span style="color:blue"><u>次优结果蓝色下划线</u></span>。
+在标准词对齐测试集上的 AER（对齐错误率）。每个语言对中，<span style="color:red"><b>最优结果红色加粗</b></span>，<span style="color:blue"><u>次优结果蓝色下划线</u></span>。
+
+<div translate="no">
 
 | 方法 | zh-en | de-en | fr-en | ro-en | ja-en | es-en | pt-en | ru-en | it-en |
 |---|---|---|---|---|---|---|---|---|---|
@@ -129,28 +120,32 @@ model = AutoModel.from_pretrained("WPS-Qingqiu/OmniAlign", trust_remote_code=Tru
 | AccAlign | 11.5 | 12.1 | 2.8 | 16.9 | 36.8 | <span style="color:blue"><u>11.1</u></span> | <span style="color:blue"><u>12.1</u></span> | 12.5 | <span style="color:blue"><u>14.3</u></span> |
 | WSPAlign (双语) | 13.1 | 11.1 | 2.8 | <span style="color:blue"><u>10.1</u></span> | <span style="color:blue"><u>19.3</u></span> | - | - | - | - |
 | WSPAlign (多语) | 22.3 | 20.0 | 12.8 | 26.4 | 45.8 | 13.4 | 12.3 | 13.1 | 17.1 |
-| BinaryAlign (双语) | <span style="color:red">**4.8**</span> | <span style="color:red">**7.8**</span> | <span style="color:red">**1.9**</span> | <span style="color:red">**7.4**</span> | <span style="color:red">**14.3**</span> | - | - | - | - |
-| **OmniAlign（本工作）** | <span style="color:blue"><u>8.5</u></span> | <span style="color:blue"><u>11.0</u></span> | <span style="color:blue"><u>2.7</u></span> | 16.7 | 29.6 | <span style="color:red">**10.7**</span> | <span style="color:red">**11.9**</span> | <span style="color:red">**12.1**</span> | <span style="color:red">**14.1**</span> |
+| BinaryAlign (双语) | <span style="color:red"><b>4.8</b></span> | <span style="color:red"><b>7.8</b></span> | <span style="color:red"><b>1.9</b></span> | <span style="color:red"><b>7.4</b></span> | <span style="color:red"><b>14.3</b></span> | - | - | - | - |
+| **OmniAlign（本工作）** | <span style="color:blue"><u>8.5</u></span> | <span style="color:blue"><u>11.0</u></span> | <span style="color:blue"><u>2.7</u></span> | 16.7 | 29.6 | <span style="color:red"><b>10.7</b></span> | <span style="color:red"><b>11.9</b></span> | <span style="color:red"><b>12.1</b></span> | <span style="color:red"><b>14.1</b></span> |
+
+</div>
 
 ### 句对齐（F1，越高越好）
 
-在标准句对齐测试集上的 F1 分数。每个语言对中，<span style="color:red">最优结果红色加粗</span>，<span style="color:blue"><u>次优结果蓝色下划线</u></span>。
+在标准句对齐测试集上的 F1 分数。每个语言对中，<span style="color:red"><b>最优结果红色加粗</b></span>，<span style="color:blue"><u>次优结果蓝色下划线</u></span>。
+
+<div translate="no">
 
 | 算法 | en-zh | en-es | en-it | en-de | en-fr | en-ru | de-fr |
 |---|---|---|---|---|---|---|---|
 | Gale–Church | 0.682 | 0.900 | 0.977 | 0.897 | 0.838 | 0.911 | 0.680 |
 | BleuAlign | 0.782 | 0.819 | 0.901 | 0.806 | 0.757 | 0.791 | 0.770 |
 | VecAlign | 0.957 | 0.892 | 0.956 | 0.869 | 0.880 | 0.921 | 0.902 |
-| BertAlign | <span style="color:blue"><u>0.969</u></span> | <span style="color:blue"><u>0.897</u></span> | <span style="color:red">**0.984**</span> | <span style="color:blue"><u>0.900</u></span> | <span style="color:blue"><u>0.909</u></span> | <span style="color:red">**0.938**</span> | <span style="color:red">**0.939**</span> |
+| BertAlign | <span style="color:blue"><u>0.969</u></span> | <span style="color:blue"><u>0.897</u></span> | <span style="color:red"><b>0.984</b></span> | <span style="color:blue"><u>0.900</u></span> | <span style="color:blue"><u>0.909</u></span> | <span style="color:red"><b>0.938</b></span> | <span style="color:red"><b>0.939</b></span> |
 | SentAlign | 0.968 | 0.872 | 0.978 | 0.892 | 0.903 | 0.920 | <span style="color:blue"><u>0.932</u></span> |
 | CrocoAlign | 0.660 | 0.696 | 0.864 | 0.804 | 0.788 | 0.783 | 0.714 |
-| **OmniAlign（本工作）** | <span style="color:red">**0.970**</span> | <span style="color:red">**0.906**</span> | <span style="color:blue"><u>0.978</u></span> | <span style="color:red">**0.913**</span> | <span style="color:red">**0.912**</span> | <span style="color:blue"><u>0.935</u></span> | 0.922 |
+| **OmniAlign（本工作）** | <span style="color:red"><b>0.970</b></span> | <span style="color:red"><b>0.906</b></span> | <span style="color:blue"><u>0.978</u></span> | <span style="color:red"><b>0.913</b></span> | <span style="color:red"><b>0.912</b></span> | <span style="color:blue"><u>0.935</u></span> | 0.922 |
+
+</div>
 
 ---
 
 ## 引用
-
-<!-- TODO: 论文正式发布后补充引用信息 -->
 
 ```bibtex
 @misc{omni-align,
@@ -169,4 +164,4 @@ model = AutoModel.from_pretrained("WPS-Qingqiu/OmniAlign", trust_remote_code=Tru
 
 本模型基于 [Apache License, Version 2.0](LICENSE) 发布。
 
-*English version: [README.md](README.md).*
+*English version: [README.md](https://huggingface.co/WPS-Qingqiu/OmniAlign).*
