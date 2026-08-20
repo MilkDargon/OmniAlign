@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/XXXX.XXXXX">📄 Paper (arXiv)</a>&nbsp;|&nbsp;
+  <a href="https://arxiv.org/abs/2608.18474">📄 Paper (arXiv)</a>&nbsp;|&nbsp;
   <a href="https://huggingface.co/WPS-Qingqiu/OmniAlign"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="18" height="18" style="vertical-align: text-bottom;"> Hugging Face</a>
 </p>
 
@@ -126,16 +126,15 @@ F1 scores on standard sentence alignment test sets. For each language pair, the 
 
 ## Citation
 
-<!-- TODO: fill in the paper citation once available -->
-
 ```bibtex
-@misc{omni-align,
-  title        = {OmniAlign: Universal Multilingual Sequence Alignment},
-  author       = {yangmengpeng},
-  year         = {2026},
-  publisher    = {Hugging Face},
-  journal      = {Hugging Face repository},
-  howpublished = {https://huggingface.co/WPS-Qingqiu/OmniAlign}
+@misc{yang2026omnialign,
+  title         = {OmniAlign: A Unified Multilingual Aligner for Word and Sentence Alignment},
+  author        = {Mengpeng Yang and Jingxu Yang and Chao Chen and Tian Xia and Yabo Sun and Qiang Liu},
+  year          = {2026},
+  eprint        = {2608.18474},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2608.18474}
 }
 ```
 
