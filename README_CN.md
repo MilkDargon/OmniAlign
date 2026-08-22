@@ -4,7 +4,8 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2608.18474">📄 Paper (arXiv)</a>&nbsp;|&nbsp;
-  <a href="https://huggingface.co/WPS-Qingqiu/OmniAlign"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="18" height="18" style="vertical-align: text-bottom;"> Hugging Face</a>
+  <a href="https://huggingface.co/WPS-Qingqiu/OmniAlign"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="18" height="18" style="vertical-align: text-bottom;"> Hugging Face</a>&nbsp;|&nbsp;
+  <a href="https://huggingface.co/spaces/hugging-apps/omnialign-demo">🕹️ Demo</a>
 </p>
 
 # OmniAlign
@@ -22,6 +23,14 @@
 > **本 GitHub 仓库只存放推理代码。**  
 > 模型权重在 Hugging Face：[**WPS-Qingqiu/OmniAlign**](https://huggingface.co/WPS-Qingqiu/OmniAlign)。  
 > 运行示例前，请先把权重下载到本地的 `OmniAlign/` 目录。
+
+---
+
+## 在线演示
+
+Hugging Face Spaces 上提供交互式 Demo：[**omnialign-demo**](https://huggingface.co/spaces/hugging-apps/omnialign-demo)。
+
+该应用运行在免费 ZeroGPU 上，基于本仓库构建。感谢 Hugging Face 开源团队制作这一 Space，让大家可以在浏览器中直接试用 OmniAlign。
 
 ---
 

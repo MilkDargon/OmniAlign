@@ -4,7 +4,8 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2608.18474">📄 Paper (arXiv)</a>&nbsp;|&nbsp;
-  <a href="https://huggingface.co/WPS-Qingqiu/OmniAlign"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="18" height="18" style="vertical-align: text-bottom;"> Hugging Face</a>
+  <a href="https://huggingface.co/WPS-Qingqiu/OmniAlign"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="18" height="18" style="vertical-align: text-bottom;"> Hugging Face</a>&nbsp;|&nbsp;
+  <a href="https://huggingface.co/spaces/hugging-apps/omnialign-demo">🕹️ Demo</a>
 </p>
 
 # OmniAlign
@@ -22,6 +23,14 @@ This model is the final checkpoint produced by the four-stage distillation pipel
 > **This GitHub repository hosts inference code only.**  
 > Model weights live on Hugging Face: [`WPS-Qingqiu/OmniAlign`](https://huggingface.co/WPS-Qingqiu/OmniAlign).  
 > Download them into the local `OmniAlign/` directory before running the examples.
+
+---
+
+## Demo
+
+An interactive demo is available on Hugging Face Spaces: [**omnialign-demo**](https://huggingface.co/spaces/hugging-apps/omnialign-demo).
+
+It runs on free ZeroGPU and is built on this repository. We thank the Hugging Face open-source team for creating this Space so others can try OmniAlign in the browser.
 
 ---
 
